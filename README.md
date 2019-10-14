@@ -1,18 +1,18 @@
-# my-app
+# electron-vue-typescript-starter
 
 ## Project setup
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### To start a Development Server
 ```
-yarn run serve
+yarn electron:serve
 ```
 
-### Compiles and minifies for production
+### To Build Your App
 ```
-yarn run build
+yarn electron:build
 ```
 
 ### Run your tests
@@ -26,4 +26,5 @@ yarn run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference Vue CLI](https://cli.vuejs.org/config/).
+See [Configuration Reference Vue CLI Plugin Electron Builder](https://nklayman.github.io/vue-cli-plugin-electron-builder/guide)

@@ -4,10 +4,10 @@ import routes from './routes';
 
 Vue.use(Router);
 
-console.log(process.env.BASE_URL);
-
 export default new Router({
-  mode: 'history',
+  // Note: Blank screen on builds issue fix.
+  // https://nklayman.github.io/vue-cli-plugin-electron-builder/guide/commonIssues.html#blank-screen-on-builds-but-works-fine-on-serve
+  mode: process.env.IS_ELECTRON ? 'hash' : 'history',
   base: process.env.BASE_URL,
   routes
 });
